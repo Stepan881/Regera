@@ -678,6 +678,7 @@ img {
 
 .card-product__table td {
   padding: 5px;
+  width: 50%;
 }
 
 .card-product__table tr > td:last-child {
