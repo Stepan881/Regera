@@ -1,0 +1,22 @@
+.news {
+  background: $bd-dark;
+
+  &__title {
+    margin-top: 76px;
+  }
+
+  &__wrapper {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+
+    .card-simple {
+      max-width: 359px;
+      width: 30%;
+    }
+  }
+
+  &__btn {
+    margin: 89px auto 77px;
+  }
+}

@@ -181,48 +181,39 @@
 		<div class="container">
 			<div class="col">
 				<h2 class="news__title title">Последние новости</h2>
-				<div class="row">
-					<article class="new-card col">
-						<div class="new-card__img">
-							<img class="new-card__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Рубрика"
-								srcset="@2x.jpg 2x" alt="Рубрика 'Вопрос-Ответ'">
-						</div>
-						<time class="new-card__time" datetime="2020-01-01">01.01.2020</time>
-						<h3 class="new-card__title">Рубрика "Вопрос-Ответ"</h3>
-						<p class="new-card__text">Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по
-							утилизации мусора и расценок на коммунальные услуги.</p>
-					</article>
+				<div class="news__wrapper row">
 
-					<article class="new-card col">
-						<div class="new-card__img">
-							<img class="new-card__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Рубрика"
-								srcset="@2x.jpg 2x" alt="Рубрика 'Вопрос-Ответ'">
-						</div>
-						<time class="new-card__time" datetime="2020-01-01">01.01.2020</time>
-						<h3 class="new-card__title">Построено 30 домов в ЖК</h3>
-						<p class="new-card__text">Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по
-							утилизации мусора и расценок на коммунальные услуги.</p>
-					</article>
+					@@include('./parts/card-simple.html', {
+						"img": "./images/index/news1.jpg",
+						"img2": "./images/index/news1@2x.jpg 2x",
+						"time": "01.01.2020",
+						"title": "Рубрика 'Вопрос-Ответ'",
+						"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
+					})
 
-					<article class="new-card col">
-						<div class="new-card__img">
-							<img class="new-card__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Рубрика"
-								srcset="@2x.jpg 2x" alt="Рубрика 'Вопрос-Ответ'">
-						</div>
-						<time class="new-card__time" datetime="2020-01-01">01.01.2020</time>
-						<h3 class="new-card__title">Дарим подарки всем новым жильцам</h3>
-						<p class="new-card__text">Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по
-							утилизации мусора и расценок на коммунальные услуги.</p>
-					</article>
+					@@include('./parts/card-simple.html', {
+						"img": "./images/index/news2.jpg",
+						"img2": "./images/index/news2@2x.jpg 2x",
+						"time": "01.01.2020",
+						"title": "Построено 30 домов в ЖК",
+						"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
+					})
 
+					@@include('./parts/card-simple.html', {
+						"img": "./images/index/news3.png",
+						"img2": "./images/index/news3@2x.png 2x",
+						"time": "01.01.2020",
+						"title": "Дарим подарки всем новым жильцам",
+						"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
+					})
 
 				</div>
 
-				<a class="more row" href="./news.html">
-					<span class="more__text">Подробнее о компании</span>
-					<span class="more__arrow"> -> </span>
-				</a>
-
+				<div class="news__btn">
+					@@include('./parts/button-more.html', {
+						
+					})
+				</div>
 			</div>
 		</div>
 	</section>
@@ -272,22 +263,3 @@
 </main>
 
 @@include('./parts/footer.html')
-<div style="margin-bottom: 50px;"></div>
-
-<!--#include virtual="/parts/button-more.html" -->
-<div style="margin-bottom: 50px;"></div>
-<!--#include virtual="/parts/button-red.html" -->
-<div style="margin-bottom: 50px;"></div>
-<!--#include virtual="/parts/button-transparent.html" -->
-<div style="margin-bottom: 50px;"></div>
-<!--#include virtual="/parts/paginations.html" -->
-<div style="margin-bottom: 50px;"></div>
-
-<!--#include virtual="/parts/card-simple.html" -->
-<div style="margin-bottom: 50px;"></div>
-
-<!--#include virtual="/parts/card-product.html" -->
-<div style="margin-bottom: 50px;"></div>
-
-<!--#include virtual="/parts/card-info.html" -->
-<div style="margin-bottom: 50px;"></div>
