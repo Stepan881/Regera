@@ -7837,6 +7837,7 @@ button {
 }
 
 .header {
+  background: #ffffff;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -7962,6 +7963,10 @@ button {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header__white {
+  background: transparent;
 }
 
 .header__white .logo__svg path {

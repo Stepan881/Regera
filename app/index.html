@@ -7,7 +7,7 @@
 	<section class="first-screen">
 
 		<picture class="first-screen__bg">
-			<img class="first-screen__img" src="./images/firstScreen.jpg" srcset="./images/firstScreen.jpg 2x" alt="Фон">
+			<img class="first-screen__img" src="./images/firstScreen.jpg" srcset="./images/firstScreen@2x.jpg 2x" alt="Фон">
 		</picture>
 		<div class="first-screen__dark"></div>
 		<div class="container">
@@ -50,7 +50,7 @@
 				</div>
 				<div class="advantages__button">
 					@@include('./parts/button-more.html', {
-
+						"link": "./about.html",
 					})
 				</div>
 			</div>
@@ -72,7 +72,8 @@
 						<b class="card-projects__text">Построен и введен в эксплуатацию</b>
 						<div class="card-projects__btn">
 							@@include('./parts/button-red.html', {
-							"title": "Подробнее о проекте"
+							"title": "Подробнее о проекте",
+							"link": "./joy.html",
 							})
 						</div>
 					</div>
@@ -95,7 +96,8 @@
 						<b class="card-projects__text">Построено 40% поселка</b>
 						<div class="card-projects__btn">
 							@@include('./parts/button-red.html', {
-							"title": "Подробнее о проекте"
+							"title": "Подробнее о проекте",
+							"link": "./grace.html",
 							})
 						</div>
 					</div>
@@ -152,7 +154,8 @@
 					<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
 					<div class="instagram__btn">
 						@@include('./parts/button-red.html', {
-						"title": "Instagram"
+						"title": "Instagram",
+						"link": "instagram.com",
 						})
 					</div>
 				</div>
@@ -211,7 +214,7 @@
 
 				<div class="news__btn">
 					@@include('./parts/button-more.html', {
-						
+						"link": "./news.html",
 					})
 				</div>
 			</div>
