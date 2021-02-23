@@ -8,6 +8,7 @@
 @import './globals.scss';
 
 // Optional
+@import '../libs/bootstrap/scss/bootstrap.scss';
 @import '../libs/bootstrap/scss/bootstrap-reboot.scss';
 
 
@@ -50,17 +51,17 @@ input,textarea {
 	&:required:valid {
 		border-color: green;
 	}
-}
+}*/
 
 body {
-	font-family: $userfont;
-	font-size: $fontsize;
-	line-height: $lineheight;
-	color: $textcolor;
+	font-family: 'Manrope';
+	font-size: 16px;
+	line-height: 24px;
+	color: $primary;
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
-}*/
+}
 
 .visually-hidden {
   position: absolute;
@@ -80,9 +81,12 @@ a {
 
 ul {
 	list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 	margin: 0;
 	padding: 0;
 }
+
 
 button {
 	cursor: pointer;
@@ -95,4 +99,14 @@ img {
 	width: 100%;
 	display: block;
 	object-fit: cover;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.hover-red {
+
+
 }
