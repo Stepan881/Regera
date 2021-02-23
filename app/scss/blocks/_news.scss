@@ -6,13 +6,14 @@
   }
 
   &__wrapper {
-    margin-top: 52px;
+    margin-top: 45px;
     display: flex;
     justify-content: space-between;
 
     .card-simple {
       max-width: 359px;
       width: 30%;
+      min-height: 520px;
     }
   }
 

@@ -7464,7 +7464,7 @@ button {
 }
 
 .card-simple__content {
-  padding: 28px 25px 37px 23px;
+  padding: 28px 25px 25px 23px;
   background: #ffffff;
   color: #373737;
 }
@@ -7552,6 +7552,64 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin: 100px auto 92px;
+}
+
+.contact__title,
+.contact__sub-title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.contact__right {
+  background: #E2704C;
+  color: #ffffff;
+  padding: 100px 65px 0;
+  width: 50%;
+  position: relative;
+}
+
+.contact__right::after {
+  position: absolute;
+  content: '';
+  width: 100vw;
+  height: 100%;
+  background: #E2704C;
+  top: 0;
+  right: -99vw;
+}
+
+.contact__left {
+  padding: 100px 0 0 0;
+  width: 50%;
+}
+
+.contact__head {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.contact__text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.contact__text:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact__address {
+  margin: 43px 0 165px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 179px;
 }
 
 .first-screen {
@@ -7846,7 +7904,7 @@ button {
 }
 
 .news__wrapper {
-  margin-top: 52px;
+  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7858,6 +7916,7 @@ button {
 .news__wrapper .card-simple {
   max-width: 359px;
   width: 30%;
+  min-height: 520px;
 }
 
 .news__btn {
@@ -7865,7 +7924,7 @@ button {
 }
 
 .projects {
-  padding-bottom: 36px;
+  padding-bottom: 50px;
 }
 
 .projects__title {
@@ -7912,8 +7971,8 @@ button {
 }
 
 .card-projects__text {
-  margin-top: 22px;
-  line-height: 22px;
+  margin-top: 15px;
+  line-height: 19px;
 }
 
 .card-projects__img-wrapper {
