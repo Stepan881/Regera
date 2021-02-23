@@ -53,10 +53,17 @@ input,textarea {
 	}
 }*/
 
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+// @include adaptiv-font(40, 20);
+
 body {
 	font-family: 'Manrope';
 	font-size: 16px;
-	line-height: 24px;
 	color: $primary;
 	min-width: 320px;
 	position: relative;
@@ -106,7 +113,23 @@ button {
   border: none;
 }
 
-.hover-red {
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
+.title {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 40px;
 }

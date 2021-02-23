@@ -1,0 +1,63 @@
+.advantages {
+  background: $bd-dark;
+
+  @include adaptiv-font(24, 20);
+
+  &__title {
+    font-weight: bold;
+    margin-top: 108px;
+    max-width: 736px;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 0;
+  }
+  &__text {
+    max-width: 736px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .title {
+    margin-top: 80px;
+  }
+
+&__block {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+  .card-advantages {
+    width: 25%;
+    border-top: 2px solid #E2704C;
+
+    &:not(:last-child) {
+      width: calc(25% - 30px);
+    }
+
+    &__header {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 42px;
+      display: flex;
+      align-items: flex-end;
+      margin-top: 30px;
+      height: 42px;
+      
+      b {
+        display: flex;
+        font-size: 24px;
+        margin-bottom: -9px;
+      }
+    }
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+  }
+  &__button {
+    display: flex;
+    margin: 100px auto 92px;
+  }
+}
