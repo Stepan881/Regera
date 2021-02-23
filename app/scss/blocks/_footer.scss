@@ -1,0 +1,110 @@
+.footer {
+  background: $bg-footer;
+  color: $white;
+
+  &__wrapper {
+    padding: 45px 0 40px;
+  }
+
+  .logo {
+    width: 290px;
+    order: 1;
+    align-items: center;
+    display: flex;
+    height: 19px;
+    padding: 0;
+    margin-top: 15px;
+    height: 40px;
+  }
+
+  &__copyright {
+    display: inline-flex;
+    width: 33%;
+    order: 3;
+    margin-top: 90px;
+    color: #BEBEBE;
+  }
+
+  &__social {
+    order: 2;
+    margin-left: auto;
+    width: 50%;
+
+    .social {
+      justify-content: flex-end;
+      height: 40px;
+    }
+  }
+
+  &__agreement {
+    order: 4;
+    width: 33%;
+    margin-top: 90px;
+    text-align: center;
+    color: $white;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+  &__development {
+    order: 5;
+    width: 33%;
+    margin-top: 90px;
+    text-align: right;
+    color: #BEBEBE;
+    a {
+      color: $white;
+      font-weight: bold;
+
+    }
+  }
+
+  .social {
+    margin-left: auto;
+    display: flex;
+
+    &__item {
+      position: relative;
+      display: flex;
+    }
+
+    &__link {
+      padding: 0;      
+      min-height: 40px;
+      width: 40px;
+      margin: 0 12px;
+
+      path {
+        stroke: $white;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        path {
+          stroke: $accent;
+          transition: 0.3s;
+        }
+      }
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+      .social__svg {
+        width: 12px;
+        height: 12px;
+      }
+
+    }
+
+    &__svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}

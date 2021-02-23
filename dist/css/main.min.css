@@ -7682,6 +7682,146 @@ button {
   letter-spacing: 0.06em;
 }
 
+.footer {
+  background: #333333;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  padding: 45px 0 40px;
+}
+
+.footer .logo {
+  width: 290px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 19px;
+  padding: 0;
+  margin-top: 15px;
+  height: 40px;
+}
+
+.footer__copyright {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 33%;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-top: 90px;
+  color: #BEBEBE;
+}
+
+.footer__social {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-left: auto;
+  width: 50%;
+}
+
+.footer__social .social {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.footer__agreement {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  width: 33%;
+  margin-top: 90px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__agreement:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer__development {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+  width: 33%;
+  margin-top: 90px;
+  text-align: right;
+  color: #BEBEBE;
+}
+
+.footer__development a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer .social {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social__link {
+  padding: 0;
+  min-height: 40px;
+  width: 40px;
+  margin: 0 12px;
+}
+
+.footer .social__link path {
+  stroke: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .social__link:hover path {
+  stroke: #E2704C;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .social__link svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer .social__link .social__svg {
+  width: 12px;
+  height: 12px;
+}
+
+.footer .social__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .gallery {
   background: #F7F7F7;
   min-height: 837px;
