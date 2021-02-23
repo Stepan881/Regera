@@ -20,12 +20,13 @@ const newer        = require('gulp-newer')
 const rsync        = require('gulp-rsync')
 const del          = require('del')
 const gcmq  	   = require('gulp-group-css-media-queries')
+const fileinclude  = require('gulp-file-include')
 
 function browsersync() {
 	browserSync.init({
 		server: {
-			baseDir: 'app/',
-			middleware: bssi({ baseDir: 'app/', ext: '.html' })
+			baseDir: 'dist/',
+			//middleware: includeHTML()
 		},
 		ghostMode: { clicks: false },
 		notify: false,
@@ -70,7 +71,7 @@ function styles() {
 		.pipe(gcmq())
 		//.pipe(cleancss({ level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(dest('app/css'))
+		.pipe(dest('dist/css'))
 		.pipe(browserSync.stream())
 }
 
@@ -84,7 +85,8 @@ function images() {
 
 function buildcopy() {
 	return src([
-		'{app/js,app/css}/*.min.*',
+		//'{app/js,app/css}/*.min.*',
+		'{app/js,app}/*.min.*',
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
 		'app/fonts/**/*'
@@ -97,6 +99,23 @@ async function buildhtml() {
 	includes.compile()
 	del('dist/parts', { force: true })
 }
+
+async function includeHTML(){
+
+	let paths = { scripts: { src: 'app/', dest: 'dist/'} }
+
+	return src([
+		'app/**/*.html',
+		//'!header.html', // ignore
+		//'!footer.html' // ignore
+	])
+	.pipe(fileinclude({
+		prefix: '@@',
+		basepath: '@file'
+	}))
+	.pipe(dest(paths.scripts.dest))
+}
+
 
 function cleandist() {
 	return del('dist/**/*', { force: true })
@@ -123,13 +142,18 @@ function startwatch() {
 	watch(`app/${preprocessor}/**/*`, { usePolling: true }, styles)
 	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
 	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
-	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
+	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on( 'change', includeHTML )
+	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on( 'change', browserSync.reload )
 }
 
 exports.scripts = scripts
 exports.styles  = styles
 exports.images  = images
+
+exports.includeHTML = includeHTML;
+
+
 //exports.deploy  = deploy
 exports.assets  = series(scripts, styles, images)
-exports.build   = series(cleandist, scripts, styles, images, buildcopy, buildhtml)
+exports.build   = series(cleandist, scripts, styles, images, buildcopy, /*buildhtml,*/ includeHTML)
 exports.default = series(scripts, styles, images, parallel(browsersync, startwatch))
