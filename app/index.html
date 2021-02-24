@@ -52,8 +52,9 @@
 					</div>
 				</div>
 				<div class="advantages__button">
-					@@include('./parts/button-more.html', {
+					@@include('./parts/buttons/button-more.html', {
 					"link": "./about.html",
+					"title": "Подробнее о компании",
 					})
 				</div>
 			</div>
@@ -74,7 +75,7 @@
 							коттедж, участок, таунхаус или малоэтажный дом в коттеджном поселке</p>
 						<b class="card-projects__text">Построен и введен в эксплуатацию</b>
 						<div class="card-projects__btn">
-							@@include('./parts/button-red.html', {
+							@@include('./parts/buttons/button-red.html', {
 							"title": "Подробнее о проекте",
 							"link": "./joy.html",
 							})
@@ -98,7 +99,7 @@
 							коттедж, участок, таунхаус или малоэтажный дом в коттеджном поселке</p>
 						<b class="card-projects__text">Построено 40% поселка</b>
 						<div class="card-projects__btn">
-							@@include('./parts/button-red.html', {
+							@@include('./parts/buttons/button-red.html', {
 							"title": "Подробнее о проекте",
 							"link": "./grace.html",
 							})
@@ -156,7 +157,7 @@
 				<div class="instagram__content">
 					<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
 					<div class="instagram__btn">
-						@@include('./parts/button-red.html', {
+						@@include('./parts/buttons/button-red.html', {
 						"title": "Instagram",
 						"link": "instagram.com",
 						})
@@ -189,7 +190,7 @@
 				<h2 class="news__title title">Последние новости</h2>
 				<div class="news__wrapper row">
 
-					@@include('./parts/card-simple.html', {
+					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news1.jpg",
 					"img2": "./images/index/news1@2x.jpg 2x",
 					"time": "01.01.2020",
@@ -197,7 +198,7 @@
 					"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
 					})
 
-					@@include('./parts/card-simple.html', {
+					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news2.jpg",
 					"img2": "./images/index/news2@2x.jpg 2x",
 					"time": "01.01.2020",
@@ -205,7 +206,7 @@
 					"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
 					})
 
-					@@include('./parts/card-simple.html', {
+					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news3.png",
 					"img2": "./images/index/news3@2x.png 2x",
 					"time": "01.01.2020",
@@ -216,56 +217,16 @@
 				</div>
 
 				<div class="news__btn">
-					@@include('./parts/button-more.html', {
+					@@include('./parts/buttons/button-more.html', {
 					"link": "./news.html",
+					"title": "Подробнее о компании",
 					})
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="contact__left">
-					<h2 class="contact__title">Свяжитесь с нами</h2>
-					<form class="contact__form form" action="#">
-						<p class="form__wrapper">
-							<label class="form__label">
-								<input class="form__input" type="text" name="name" placeholder="Имя">
-							</label>
-						</p>
-						<p class="form__wrapper">
-							<label class="form__label">
-								<input class="form__input" type="text" name="name" placeholder="Телефон">
-							</label>
-						</p>
-						<p class="form__wrapper">
-							<label class="form__label">
-								<input class="form__input" type="text" name="name" placeholder="E-mail">
-							</label>
-						</p>
-						<p class="form__wrapper">
-							<label class="form__label">
-								<input class="form__input" type="text" name="name" placeholder="Комментарий">
-							</label>
-						</p>
-						<button class="button" type="submit">
-							<span class="button__text">Отправить</span>
-						</button>
-					</form>
-				</div>
-				<div class="contact__right">
-					<h2 class="contact__sub-title">Офис продаж</h2>
-					<p class="contact__head">Телефон</p>
-					<a class="contact__text" href="#">+7 (4012) 91-21-35</a>
-					<p class="contact__head">e-mail</p>
-					<a class="contact__text" href="#">info@regera.ru</a>
-					<address class="contact__address">г. Калининград, л Комсомольская 85, офис 104</address>
-				</div>
-			</div>
-		</div>
-	</section>
+	@@include('./template/contact.html')
 </main>
 
 @@include('./parts/footer.html')
