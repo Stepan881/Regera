@@ -1,0 +1,25 @@
+.communications.benefits {
+  padding: 0;
+
+  .communications {
+    &__title {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 12px;
+      margin-bottom: 58px;
+    }
+
+    &__bg {
+      width: 100%;
+      min-height: 571px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      min-height: 571px;
+    }
+  }
+
+}

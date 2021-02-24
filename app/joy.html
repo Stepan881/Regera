@@ -14,7 +14,7 @@
     <div class="container">
       <div class="project__top">
         <span class="project__sub-title">Коттеджный поселок</span>
-        <h1 class="project__title">ДЖОЙ</h1>
+        <h1 class="project__title">Джой</h1>
         <p class="project__text">Мечты имеют свойство сбываться — но если
           вы делаете им шаг навстречу, это происходит намного быстрее
         </p>
@@ -40,26 +40,42 @@
 
   </section>
   <section class="benefits">
-    <div class="container row">
+    <div class="container">
       <h2 class="benefits__title title">Преимущества коттеджного посёлка “Джой”</h2>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
+      
+      <div class="benefits__wrapper row">
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages1.svg",
+          "title":"Собственный участок",
+          "text":"Территория облагорожена и благоустроена",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages2.svg",
+          "title":"Чистовая отделка",
+          "text":"Коттеджи сразу готовы к ремонту",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages3.svg",
+          "title":"Коммуникации",
+          "text":"одведены (газ, электричество, водоснабжение)",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages4.svg",
+          "title":"Развитая инфраструктура",
+          "text":"Рядом магазины, больница, учебные заведения",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages5.svg",
+          "title":"Экологически чистый район",
+          "text":"На территории комлекса современный ФОК, тротуары и уличное освещение",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/advantages6.svg",
+          "title":"Доступные цены",
+          "text":"Комфортабельный коттедж по цене 2 комнатной квартиры",
+        })
       </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
+
     </div>
   </section>
 
@@ -103,21 +119,29 @@
   </section>
 
   <section class="benefits location">
-    <div class="container row">
-      <h2 class="benefits__title title">Расположение</h2>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
-      </div>
-      <div class="benefits__wrapper">
-        <img class="benefits__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Иконка" alt="Иконка">
+    <div class="container">
+      <h2 class="benefits__title title-big">Расположение</h2>
+      <div class="benefits__wrapper row">
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/location1.svg",
+          "title":"20 минут до центра",
+          "text":"У каждого коттеджа своя дорога на выезд. До центра города около 15 км по комфортному шоссе",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/location2.svg",
+          "title":"Транспортные остановки",
+          "text":"Не подалеку от поселка курсируют 3 маршрута общественного транспорта",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+          "img": "./images/joy/location3.svg",
+          "title":"Экологически чистый район",
+          "text":"В дали от многоэтажек и шумных пыльных дорог",
+        })
       </div>
     </div>
 
     <div class="benefits__map">
-      <iframe
+      <iframe class="benefits__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.6669050330615!2d20.474449015555958!3d54.73307367763768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33e0bbeb9486d%3A0x859e5f77c5af64c9!2z0YPQuy4g0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8sIDg1LCAxMDQsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwMjM!5e0!3m2!1sru!2sru!4v1614005893374!5m2!1sru!2sru"
         width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
@@ -126,29 +150,34 @@
 
   <section class="communications benefits">
     <div class="container">
-      <h2 class="communications__title center">Коммуникации</h2>
-      <div class="row">
-        <div class="benefits__wrapper">
-          <img class="benefits__img" src="http://dummyimage.com/200x60/99cccc/ffffff.gif&text=Коммуникации"
-            alt="Коммуникации">
-        </div>
-        <div class="benefits__wrapper">
-          <img class="benefits__img" src="http://dummyimage.com/200x60/99cccc/ffffff.gif&text=Коммуникации"
-            alt="Коммуникации">
-        </div>
-        <div class="benefits__wrapper">
-          <img class="benefits__img" src="http://dummyimage.com/200x60/99cccc/ffffff.gif&text=Коммуникации"
-            alt="Коммуникации">
-        </div>
-        <div class="benefits__wrapper">
-          <img class="benefits__img" src="http://dummyimage.com/200x60/99cccc/ffffff.gif&text=Коммуникации"
-            alt="Коммуникации">
-        </div>
+      <h2 class="communications__title">Коммуникации</h2>
+      <div class="benefits__wrapper row">
+        @@include('./parts/icon-block/advantages-col-4.html', {
+          "img": "./images/joy/communications1.svg",
+          "title":"",
+          "text":"",
+        })
+        @@include('./parts/icon-block/advantages-col-4.html', {
+          "img": "./images/joy/communications2.svg",
+          "title":"",
+          "text":"",
+        })
+        @@include('./parts/icon-block/advantages-col-4.html', {
+          "img": "./images/joy/communications3.svg",
+          "title":"",
+          "text":"",
+        })
+        @@include('./parts/icon-block/advantages-col-4.html', {
+          "img": "./images/joy/communications4.svg",
+          "title":"",
+          "text":"",
+        })
+      
       </div>
     </div>
     <div class="communications__bg">
-      <img class="communications__img " src="http://dummyimage.com/550x200/99cccc/ffffff.gif&text=Коммуникации+фон"
-        alt="Коммуникации">
+      <img class="communications__img" src="./images/joy/communications.jpg" srcset="./images/joy/communications@2x.jpg 2x"
+      alt="ДЖОЙ">
     </div>
   </section>
 

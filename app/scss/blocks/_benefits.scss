@@ -1,0 +1,17 @@
+.benefits {
+  padding-top: 78px;
+  padding-bottom: 43px;
+
+  &__title {
+    margin:0 0 54px 0;
+  }
+
+  &__map {
+    margin-top: 50px;
+  }
+
+  &__iframe {
+    width: 100%;
+    min-height: 585px;
+  }
+}

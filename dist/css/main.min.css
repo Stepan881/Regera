@@ -7244,6 +7244,12 @@ button {
   line-height: 40px;
 }
 
+.title-big {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+}
+
 .button-more {
   color: #E2704C;
   font-weight: bold;
@@ -7534,6 +7540,54 @@ button {
   line-height: 34px;
 }
 
+.advantages-col-3 {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advantages-col-4 {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advantages-col-img {
+  width: 126px;
+  height: 126px;
+  margin: 0 auto;
+}
+
+.advantages-col-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 263px;
+  margin: 15px auto 8px;
+}
+
+.advantages-col-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 263px;
+  margin: 0 auto;
+}
+
 .advantages {
   background: #F7F7F7;
   font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
@@ -7627,6 +7681,47 @@ button {
   font-size: 18px;
   line-height: 25px;
   margin: 0;
+}
+
+.benefits {
+  padding-top: 78px;
+  padding-bottom: 43px;
+}
+
+.benefits__title {
+  margin: 0 0 54px 0;
+}
+
+.benefits__map {
+  margin-top: 50px;
+}
+
+.benefits__iframe {
+  width: 100%;
+  min-height: 585px;
+}
+
+.communications.benefits {
+  padding: 0;
+}
+
+.communications.benefits .communications__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 12px;
+  margin-bottom: 58px;
+}
+
+.communications.benefits .communications__bg {
+  width: 100%;
+  min-height: 571px;
+}
+
+.communications.benefits .communications__img {
+  width: 100%;
+  height: 100%;
+  min-height: 571px;
 }
 
 .contact__title,
@@ -8192,14 +8287,13 @@ button {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 20px;
 }
 
 .project__title {
   font-weight: bold;
   font-size: 90px;
   line-height: 98px;
-  margin-bottom: 32px;
+  margin: 20px 0 32px;
 }
 
 .project__text {
@@ -8213,7 +8307,7 @@ button {
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
-  max-width: 944px;
+  max-width: 927px;
   margin: 80px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8222,6 +8316,10 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.project__content {
+  margin: 0;
 }
 
 .projects {
