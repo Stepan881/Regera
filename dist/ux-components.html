@@ -56,7 +56,7 @@
   }
 
   #card {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
   }
 
@@ -112,10 +112,16 @@
 </a>
       </div>
       <div class="br">
-        <a class="button button-transparent" href="#">
+        <a class="button button-transparent" href="@@link">
   <span>Смотреть ещё</span>
 </a>
       </div>
+      <div class="br">
+        <a class="button button-red-min" href="@@link">
+  <span>Подробнее</span>
+</a>
+      </div>
+
     </div>
 
     <h2 class="uxTitle">Modal</h2>
@@ -138,7 +144,8 @@
 
     <h2 class="uxTitle">Card</h2>
     <div id="card">
-      <article class="card card-simple">
+      <div class="">
+        <article class="card card-simple">
   <a class="card-simple__link" href="#"></a>
   <div class="card-simple__img-wrapper">
     <img class="card-simple__img" src="./images/index/news1.jpg" srcset="./images/index/news1@2x.jpg 2x"
@@ -150,14 +157,15 @@
     <p class="card-simple__text">Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги.</p>
   </div>
 </article>
-
-      <article class="card-product">
-  <div class="card-simple__img-wrapper">
+      </div>
+      <div class="">
+        <article class="card-product">
+  <div class="card-product__img-wrapper">
     <img class="card-product__img" src="./images/index/news1.jpg" srcset="./images/index/news1@2x.jpg 2x"
-    alt="BOON'">
+    alt="BOON">
   </div>
   <div class="card-product__content">
-    <h3 class="card-product__title">BOON'</h3>
+    <h3 class="card-product__title">BOON</h3>
     <table class="card-product__table">
       <tr>
         <td>Кол-во комнат:</td>
@@ -172,14 +180,30 @@
         <td>6 соток</td>
       </tr>
       <tr>
-        <td class="card-product__bold">от 6 500 000</td>
+        <td><span class="card-product__bold">от 6 500 000</span></td>
         <td>
-          <!--#include virtual="/parts/button-red.html" -->
+          <a class="button button-red-min" href="@@link">
+  <span>Подробнее</span>
+</a>
         </td>
       </tr>
     </table>
   </div>
 </article>
+      </div>
+      <div class="">
+        <article class="card-info">
+  <a class="card-info__link" href="#"></a>
+  <div class="card-info__img-wrapper">
+    <img class="card-info__img" src="./images/index/news1.jpg" srcset="./images/index/news1@2x.jpg 2x"
+      alt="Монолитный фундамент">
+  </div>
+  <div class="card-info__content">
+    <h3 class="card-info__title">Монолитный фундамент</h3>
+    <p class="card-info__text">Это цельный элемент, состоящий из прочного железного каркаса, и бетонного тела. На сегодняшний день такой фундамент является наиболее крепким, долговечным видом основания, с высокой несущей способностью!</p>
+  </div>
+</article>
+      </div>
     </div>
 
     <h2 class="uxTitle">Icon</h2>
@@ -292,7 +316,7 @@
 				</ul>
 				<a class="tel" href="tel:84012561680">+7 (4012) 56-16-80</a>
 				<div class="header__button">
-					<a class="button button-transparent" href="#">
+					<a class="button button-transparent" href="./ux-components.html">
   <span>Заказать звонок</span>
 </a>
 				</div>
@@ -389,7 +413,7 @@
 				</ul>
 				<a class="tel" href="tel:84012561680">+7 (4012) 56-16-80</a>
 				<div class="header__button">
-					<a class="button button-transparent" href="#">
+					<a class="button button-transparent" href="./ux-components.html">
   <span>Заказать звонок</span>
 </a>
 				</div>

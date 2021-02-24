@@ -1,5 +1,5 @@
 <article class="card-product">
-  <div class="card-simple__img-wrapper">
+  <div class="card-product__img-wrapper">
     <img class="card-product__img" src="@@img" srcset="@@img2"
     alt="@@title">
   </div>
@@ -19,9 +19,11 @@
         <td>@@plot</td>
       </tr>
       <tr>
-        <td class="card-product__bold">@@price</td>
+        <td><span class="card-product__bold">@@price</span></td>
         <td>
-          <!--#include virtual="/parts/button-red.html" -->
+          <a class="button button-red-min" href="@@link">
+  <span>Подробнее</span>
+</a>
         </td>
       </tr>
     </table>

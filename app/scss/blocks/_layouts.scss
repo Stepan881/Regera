@@ -1,0 +1,17 @@
+.layouts {
+  background: $bd-dark;
+  padding-top: 80px;
+
+  &__title {
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    justify-content: center;
+    &>* {
+      width: 30%;
+      margin: 0 1% 40px;
+    }
+  }
+}
