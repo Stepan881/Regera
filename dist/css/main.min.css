@@ -7179,6 +7179,7 @@ body {
 
 #about .advantages {
   background-color: #ffffff;
+  background-color: green;
 }
 
 a {
@@ -8140,6 +8141,28 @@ button {
 
 .news__btn {
   margin: 89px auto 77px;
+}
+
+.partners__title {
+  margin-top: 97px;
+}
+
+.partners__images {
+  margin-top: 78px;
+  padding-bottom: 80px;
+}
+
+.partners__wrapper {
+  height: 103px;
+  width: 25%;
+  padding: 13px 34px;
+  margin-bottom: 25px;
+}
+
+.partners__icon {
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .projects {
