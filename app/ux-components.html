@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>UX</title>
+</head>
+<style>
+  #UX {
+    background: silver;
+    position: relative;
+  }
+
+  #UX .header {
+    position: static;
+  }
+
+  .break {
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    z-index: 999;
+  }
+
+  .uxTitle {
+    margin: 50px 0 10px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .br {
+    margin: 5px 0;
+  }
+
+  #color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .color {
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    width: 250px;
+    height: 70px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #card>* {
+    width: 30%;
+    margin: 0 1%;
+  }
+</style>
+
+<body id="UX">
+  <main class="container">
+  <div class="break">
+    @@include('./parts/button-more.html', {
+      "title": "На Index.html",
+      "link": "./index.html",
+      })
+  </div>
+
+
+  <h2 class="uxTitle">Color</h2>
+  <div id="color">
+
+    <div class="color" style="background: #F7F7F7">$bd-dark;<br>#F7F7F7;</div>
+    <div class="color" style="background: #373737;">$primary;<br>#373737;</div>
+    <div class="color" style="background: #7C7C7C;">$secondary;<br>#7C7C7C;</div>
+    <div class="color" style="background: #E2704C;">$accent;<br>#E2704C;</div>
+    <div class="color" style="background: #F6F6F6;">$light;<br>#F6F6F6;</div>
+    <div class="color" style="background: #ffffff;">$white;<br>#ffffff;</div>
+    <div class="color" style="background: #333333;">$bg-footer;<br>#333333;</div>
+  </div>
+
+  <h2 class="uxTitle">Manrope</h2>
+  <div id="Manrope">
+
+  </div>
+
+  <h2 class="uxTitle">Typography</h2>
+  <div id="Typography">
+
+  </div>
+
+  <h2 class="uxTitle">Buttons</h2>
+  <div id="Buttons">
+    <div class="br">
+      @@include('./parts/button-more.html', {
+      "title": "Подробнее о компании",
+      "link": "#!",
+      })
+    </div>
+    <div class="br">
+      @@include('./parts/button-red.html', {
+      "title": "Instagram"
+      })
+    </div>
+    <div class="br">
+      @@include('./parts/button-transparent.html', {
+      "title": "Смотреть ещё"
+      })
+    </div>
+  </div>
+
+  <h2 class="uxTitle">Modal</h2>
+  <div id="Modal">
+
+  </div>
+
+  <h2 class="uxTitle">Pagination</h2>
+  <div id="Pagination">
+    @@include('./parts/paginations.html', {
+      })
+  </div>
+
+  <h2 class="uxTitle">Card</h2>
+  <div id="card">
+    @@include('./parts/card-simple.html', {
+      "img": "./images/index/news1.jpg",
+      "img2": "./images/index/news1@2x.jpg 2x",
+      "time": "01.01.2020",
+      "title": "Рубрика 'Вопрос-Ответ'",
+      "text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
+      })
+
+      @@include('./parts/card-product.html', {
+        "img": "./images/index/news1.jpg",
+        "img2": "./images/index/news1@2x.jpg 2x",
+        "title": "BOON'",
+        "rooms": "3 комнаты",
+        "home": "80 метров",
+        "plot": "6 соток",
+        "price": "от 6 500 000",
+
+        })
+  </div>
+
+  <h2 class="uxTitle">Icon</h2>
+  <div id="Icon">
+
+  </div>
+
+  <h2 class="uxTitle">Form</h2>
+  <div id="Form">
+
+  </div>
+
+  <h2 class="uxTitle">Sliders</h2>
+  <div id="Sliders">
+
+  </div>
+</main>
+<div class="container">
+  <h2 class="uxTitle">Navigation</h2>
+</div>
+  
+  <div id="Navigation">
+    <div class="br">
+      @@include('./parts/header.html', {
+        "header-white": "header__white"
+        })
+    </div>
+    <div class="br">
+      @@include('./parts/header.html', {
+      "header-white": ""
+      })
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="uxTitle">Footer</h2>
+  </div>
+ 
+  <div id="Footer">
+    @@include('./parts/footer.html')
+  </div>
+
+
+</body>
+
+</html>

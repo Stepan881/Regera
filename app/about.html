@@ -1,6 +1,8 @@
-@@include('./parts/header.html', {
+@@include('./head.html', {
 "title": "О нас",
-"header-white": ""
+})
+@@include('./parts/header.html', {
+"header-white": "",
 })
 
 <main class="main" id="about">
@@ -273,7 +275,7 @@
               <div class="col">
                 <img class="documentation__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Свидетельство"
                   alt="Свидетельство">
-                <p class="documentation__text"></p>
+                <p class="documentation__text">Свидетельство о допуске к определенному виду или видам работ,</p>
               </div>
             </div>
 
@@ -281,7 +283,7 @@
               <div class="col">
                 <img class="documentation__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Свидетельство"
                   alt="Свидетельство">
-                <p class="documentation__text"></p>
+                <p class="documentation__text">Свидетельство о допуске к определенному виду или видам работ,</p>
               </div>
             </div>
 
@@ -289,7 +291,7 @@
               <div class="col">
                 <img class="documentation__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Свидетельство"
                   alt="Свидетельство">
-                <p class="documentation__text"></p>
+                <p class="documentation__text">Свидетельство о допуске к определенному виду или видам работ,</p>
               </div>
             </div>
 
@@ -313,7 +315,7 @@
   <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="contact__left">
           <h2 class="contact__title">Свяжитесь с нами</h2>
           <form class="contact__form form" action="#">
             <p class="form__wrapper">
@@ -341,7 +343,7 @@
             </button>
           </form>
         </div>
-        <div class="col">
+        <div class="contact__right">
           <h2 class="contact__sub-title">Офис продаж</h2>
           <p class="contact__head">Телефон</p>
           <a class="contact__text" href="#">+7 (4012) 91-21-35</a>

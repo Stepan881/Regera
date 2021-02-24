@@ -7179,7 +7179,6 @@ body {
 
 #about .advantages {
   background-color: #ffffff;
-  background-color: green;
 }
 
 a {
@@ -8109,7 +8108,6 @@ button {
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
   padding: 0;
   max-width: 750px;
   width: 100%;
@@ -8231,6 +8229,10 @@ button {
 
 .card-projects__img {
   height: 100%;
+}
+
+.reviews {
+  background-color: #F7F7F7;
 }
 
 @media (min-width: 576px) {
