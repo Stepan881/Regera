@@ -28,4 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	slider();
 
 
-})
+	$('.slider-photos').slick({
+		dots: true,
+		lazyLoad: 'ondemand',
+		nextArrow: '.slider-next',
+  	prevArrow: '.slider-prew',
+		dotsClass: 'boolets',
+		customPaging: function(slider, i) { 
+			return '<span class="boolets-dot"></span>';
+	},
+
+	});
+
+
+
+});
