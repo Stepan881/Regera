@@ -8539,16 +8539,18 @@ button {
 
 .gallery {
   background: #F7F7F7;
-  min-height: 837px;
 }
 
 .gallery__title {
-  margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .gallery__slider {
-  display: none;
+  padding: 54px 0 70px;
 }
 
 .grace__village {
