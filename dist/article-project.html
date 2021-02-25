@@ -252,30 +252,6 @@
   </section>
 </main>
 
-<script>
-  function slider() {
-
-    let image = document.querySelector(`#image`);
-    let dots = document.querySelector(`#dots`);
-    let dotsImg = dots.querySelectorAll(`img`);
-
-    dots.addEventListener(`click`, function (evt) {
-      if (evt.target.matches(`.article-project__buulet-img`)) {
-        dotsImg.forEach(img => {
-          img.classList.remove(`active`);
-        })
-
-        image.src = evt.target.src;
-        evt.target.classList.add(`active`);
-      }
-
-
-    })
-
-  }
-  slider();
-</script>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__wrapper row">

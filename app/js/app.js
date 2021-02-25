@@ -7,7 +7,25 @@
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
 document.addEventListener('DOMContentLoaded', () => {
+	function slider() {
 
-	// Custom JS
-console.log(321);
+		let image = document.querySelector(`#image`);
+
+		if (image === null) return;
+
+		let dots = document.querySelector(`#dots`);
+		let dotsImg = dots.querySelectorAll(`img`);
+		dots.addEventListener(`click`, function (evt) {
+			if (evt.target.matches(`.article-project__buulet-img`)) {
+				dotsImg.forEach(img => {
+					img.classList.remove(`active`);
+				});
+				image.src = evt.target.src;
+				evt.target.classList.add(`active`);
+			}
+		})
+	}
+	slider();
+
+
 })
