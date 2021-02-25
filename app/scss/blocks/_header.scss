@@ -105,6 +105,7 @@
   }
 
   &__white {
+    transition: 0.3s;
     background: transparent;
     .logo__svg {
       path {

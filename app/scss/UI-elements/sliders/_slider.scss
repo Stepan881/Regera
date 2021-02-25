@@ -1,23 +1,25 @@
 .slider {
   width: 100%;
-  min-height: 500px;
   position: relative;
   display: flex;
 
 
   &-photos {
-    height: 556px;
-    min-height: 556px;
+    // height: 556px;
+    // min-height: 556px;
     width: 100%;
     padding: 0 96px;
   }
 
   &-slide {
-    height: 556px;
-    min-height: 556px;
+    display: flex;
+    height: 100%;
     width: 100%;
   }
 
+  &-image {
+    height: 100%;
+  }
 
   &-prew {
     position: absolute;
@@ -49,7 +51,8 @@
     }
 
     li {
-      cursor: pointer;  
+      cursor: pointer;
+
       &:hover {
         .boolets-dot {
           transform: scale(1.7);
@@ -68,4 +71,39 @@
       }
     }
   }
+
+  &__rewiews {
+    max-width: 653px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+
+  &__text {
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("../images/quote.png");
+      width: 68px;
+      height: 59px;
+      left: -100px;
+      top: 0;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__job {
+    font-weight: bold;
+    color: #7C7C7C;
+  }
+
 }

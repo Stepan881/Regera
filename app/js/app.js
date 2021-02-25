@@ -27,19 +27,40 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	slider();
 
-
-	$('.slider-photos').slick({
-		dots: true,
-		lazyLoad: 'ondemand',
-		nextArrow: '.slider-next',
-  	prevArrow: '.slider-prew',
-		dotsClass: 'boolets',
-		customPaging: function(slider, i) { 
-			return '<span class="boolets-dot"></span>';
-	},
-
+	$( ".slider" ).each(function(index) {
+		$('.slider-photos', $(this)).slick({
+			adaptiveHeight: true,
+			dots: true,
+			appendArrows: 'pagination',
+			lazyLoad: 'ondemand',
+			prevArrow: $(this).find('.prew'),
+			nextArrow: $(this).find('.next'),
+			dotsClass: 'boolets',
+			customPaging: function (slider, i) {
+				return '<span class="boolets-dot"></span>';
+			},
+		});
 	});
 
+	function headerColor() {
+		function toggle() {
+			var height = $(window).scrollTop();
+			if (height > 100) {
+				$('.header').removeClass('header__white');
+			} else {
+				$('.header').addClass('header__white');
+			}
+		}
+		toggle();
 
+		if ($('main.index').length) {
+			$(window).scroll(function () {
+				toggle();
+			});
+		} else {
+			$('.header').removeClass('header__white');
+		}
+	}
+	headerColor();
 
 });
