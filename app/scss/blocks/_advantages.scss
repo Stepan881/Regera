@@ -5,8 +5,8 @@
     margin-top: 108px;
     max-width: 736px;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 33px;
     margin-bottom: 0;
 
     @media (max-width: $lg) {
@@ -17,9 +17,9 @@
 
   &__text {
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    max-width: 560px;
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 690px;
     margin: 0;
 
     @media (max-width: $lg) {
@@ -29,7 +29,7 @@
   }
 
   .title {
-    margin-top: 80px;
+    margin-top: 94px;
 
     @media (max-width: $lg) {
       margin-top: 40px;
@@ -121,6 +121,19 @@
 
   &__card {
     margin-bottom: 60px;
+
+
+    .advantages__header {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    .advantages__text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+    }
 
     @media (max-width: $md) {
       margin-bottom: 16px;

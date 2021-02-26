@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('#slide-priject-big').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows : false,
+			arrows: false,
 			dots: false,
 			fade: true,
 			asNavFor: '#slide-priject-min'
@@ -71,9 +71,41 @@ document.addEventListener('DOMContentLoaded', () => {
 			variableWidth: true,
 			swipeToSlide: true,
 			asNavFor: '#slide-priject-big',
-			arrows : false,
+			arrows: false,
 			dots: false,
-			focusOnSelect: true
+			focusOnSelect: true,
+			slidesToShow: 6,
+			slidesToScroll: 6,
+			responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 5,
+						slidesToScroll: 5,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						variableWidth: false,
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+			]
 		});
 	}
 	sliderProject();
@@ -116,11 +148,115 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		overlay.addEventListener('click', function (evt) {
-			console.log(evt.target);
 			btn.classList.remove('header__open');
 			menu.classList.remove('nav--open');
 		});
 	};
 
 	navMenu();
+
+
+	// открыть форму
+	function openForm() {
+		const form = document.querySelector('.popup-form');
+		const success = document.querySelector('.popup-success');
+
+		const btnOpenForm = document.querySelectorAll('.js-open-form');
+		if (form === null || success === null || btnOpenForm === null) {
+			console.log('form: ', form);
+			console.log('success: ', success);
+			console.log('btnOpenForm: ', btnOpenForm);
+			console.log('Нет модалок или  класса .js-open-form');
+			return;
+		}
+		function openForm() {
+			form.classList.add('open');
+		}
+		function closeForm() {
+			form.classList.remove('open');
+		}
+		function openSuccess() {
+			success.classList.add('open');
+		}
+		function closeSuccess() {
+			success.classList.remove('open');
+		}
+
+		btnOpenForm.forEach(el => {
+			el.addEventListener('click', function (evt) {
+				evt.preventDefault();
+				openForm();
+			})
+		});
+
+		form.addEventListener('click', function (evt) {
+			if (evt.target.matches('.popup-overlay')) {
+				closeForm();
+			}
+			if (evt.target.closest('.popup-close')) {
+				closeForm();
+			}
+			if (evt.target.matches('.js-submit')) {
+				evt.preventDefault();
+				closeForm();
+				openSuccess();
+			}	
+		})
+
+		success.addEventListener('click', function (evt) {
+
+			if (evt.target.matches('.popup-overlay')) {
+				closeSuccess();
+
+			}
+			if (evt.target.closest('.popup-close')) {
+				closeSuccess();
+			}
+		});
+
+		// close ecs keydown
+		
+		document.addEventListener('keydown', function(evt) {
+			
+			let form = document.querySelector('.popup.open');
+			if (event.keyCode == 27 && form) { 
+				closeForm();
+				closeSuccess();
+			}
+		});
+	}
+	openForm();
 });
+
+
+
+
+
+
+
+
+
+// const btnOpenForm = document.querySelectorAll('.js-open-form');
+// const form = document.querySelector('.popup-form');
+// const success = document.querySelector('.popup-success');
+
+// btnOpenForm.forEach(el => {
+// 	el.addEventListener('click', evt => {
+// 		evt.preventDefault();
+// 		form.classList.add('open');
+// 	})
+// });
+// form.addEventListener('click', evt => {
+
+// 	if (evt.target.matches('.popup-overlay')) {
+// 		form.classList.remove('open')
+// 	}	
+
+// 	if (evt.target.matches('.js-submit')) {
+// 		form.classList.remove('open');
+// 		success.classList.add('open');
+// 		console.log(1);
+// 	}	
+
+// 	console.log('evt.target: ', evt.target);
+// })

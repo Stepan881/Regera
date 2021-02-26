@@ -1,3 +1,13 @@
+.header .nav__link.active {
+  text-shadow: 0 0 0px $primary, 0 0 0px $primary;
+}
+
+.header__white {
+  .nav__link.active {
+    text-shadow: 0 0 0px $white, 0 0 0px $white;
+  }
+}
+
 .header {
   background: $white;
   position: fixed;
@@ -92,7 +102,6 @@
       &:hover {
         text-shadow: 0 0 0px $primary, 0 0 0px $primary;
       }
-
     }
   }
 
@@ -218,7 +227,6 @@
     .nav {
       overflow: auto;
       height: 100vh;
-      overflow: scroll;
       transition: 0.3s;
       position: fixed;
       top: 0;
@@ -232,7 +240,7 @@
       background: linear-gradient(to left, $white 0, $white 375px, rgba(255, 255, 255, 0) 375px, rgba(255, 255, 255, 0) 100%);
       background: linear-gradient($white);
       visibility: hidden;
-      
+
       &.nav--open {
         transition: 0.3s;
         top: 0;
@@ -297,6 +305,7 @@
         max-width: 375px;
         width: 100%;
         margin-bottom: 70px;
+
         &__link {
           padding: 16px;
         }

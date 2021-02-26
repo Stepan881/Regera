@@ -6,7 +6,9 @@
     grid-gap: 30px;
     display: grid;
     grid-template:
-      "i t"50px "i c"auto "g g"auto / 50% 50%;
+      "i t" 50px 
+      "i c" auto 
+      "g g" auto / 50% calc(50% - 30px);
 
     @media (max-width: $lg) {
       display: grid;
@@ -124,8 +126,10 @@
 
   &__by {
     margin-top: 40px;
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
+
       .button {
         width: 100%;
         height: 48px;
@@ -196,10 +200,15 @@
     }
   }
 
-  &__bg-map {}
+  .article-project__gallery {
+    .slick-slide {
+      opacity: 0.6;
+      transition: 0.3s;
+    }
 
-  &__img-map {}
-
-  &__download {}
-
+    .slick-current  {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
 }

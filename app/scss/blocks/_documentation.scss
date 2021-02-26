@@ -23,4 +23,17 @@
       padding: 0px 65px;
     }
   }
+  .slider {
+
+    .boolets {
+      display: none !important;
+      @media (max-width: $md) { 
+        display: flex !important;
+      }
+    }
+
+    .slider-photos {
+      min-height: auto;
+    }
+  }
 }

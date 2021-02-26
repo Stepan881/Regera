@@ -25,7 +25,7 @@
 
     &>* {
       width: 30%;
-      margin: 0 1.5% 30px;
+      margin: 0 1% 30px;
 
       @media (max-width: $xl) {
         width: 48%;
@@ -34,7 +34,7 @@
       @media (max-width: $lg) {
 
         width: 100%;
-        margin: 0 1.5% 30px;
+        margin: 0 1% 30px;
       }
 
       @media (max-width: $sm) {
@@ -47,21 +47,21 @@
 
 
     .card-simple {
-      max-width: 360px;
+      // max-width: 360px;
       min-height: 520px;
 
       @media (max-width: $lg) {
-        max-width: 100%;
+        // max-width: 100%;
         min-height: auto;
       }
     }
 
     .card-info {
-      max-width: 360px;
+      // max-width: 360px;
 
       @media (max-width: $sm) { 
 
-        max-width: calc(100% + 30px);
+        // max-width: calc(100% + 30px);
         width: calc(100% + 30px);
         margin: 0 -15px 40px;
 
