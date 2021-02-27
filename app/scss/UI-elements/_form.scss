@@ -1,0 +1,91 @@
+.form {
+
+  form {}
+
+  &__item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary;
+    margin-bottom: 16px;
+    position: relative;
+
+    &--bottom {
+      margin: 45px 0 54px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid #7C7C7C;
+      width: 100%;
+      padding: 12px 0;
+      transition: 0.3s;
+      outline: none;
+
+      &::placeholder {
+        opacity: 0.4;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        &::placeholder {
+          opacity: 1;
+
+        }
+      }
+
+      &:focus {
+        &::placeholder {
+          color:transparent;
+        }
+      }
+
+    }
+
+    label {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: $accent;
+    }
+  }
+
+  &__politics {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 30px;
+
+    @media (max-width: $md) { 
+      margin-bottom: 60px;
+    }
+
+    a {
+      color: $primary;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  button[type="submit"] {
+    margin-top: 24px;
+    color: $white;
+    background-color: $accent;
+    border-radius: 999px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    min-width: 254px;
+    justify-content: center;
+
+    @media (max-width: $sm) { 
+      width: 100%;
+    }
+  }
+
+}

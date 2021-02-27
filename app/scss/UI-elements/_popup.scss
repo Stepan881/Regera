@@ -45,13 +45,17 @@
     min-height: 543px;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 60px 40px;
+    padding: 60px 100px;
     background: $white;
     position: relative;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: $md) { 
+      padding: 80px 17px;
+    }
   }
 
   &-close {
@@ -77,9 +81,7 @@
     width: 100%;
 
     @media (max-width: $md) { 
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
+      padding: 0;
     }
   }
 }

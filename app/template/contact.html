@@ -3,31 +3,9 @@
     <div class="row">
       <div class="contact__left">
         <h2 class="contact__title">Свяжитесь с нами</h2>
-        <form class="contact__form form" action="#">
-          <p class="form__wrapper">
-            <label class="form__label">
-              <input class="form__input" type="text" name="name" placeholder="Имя">
-            </label>
-          </p>
-          <p class="form__wrapper">
-            <label class="form__label">
-              <input class="form__input" type="text" name="name" placeholder="Телефон">
-            </label>
-          </p>
-          <p class="form__wrapper">
-            <label class="form__label">
-              <input class="form__input" type="text" name="name" placeholder="E-mail">
-            </label>
-          </p>
-          <p class="form__wrapper">
-            <label class="form__label">
-              <input class="form__input" type="text" name="name" placeholder="Комментарий">
-            </label>
-          </p>
-          <button class="button" type="submit">
-            <span class="button__text">Отправить</span>
-          </button>
-        </form>
+        <div class="contact__form-container">
+          @@include('../parts/form/form.html'})
+        </div>
       </div>
       <div class="contact__right">
         <h2 class="contact__sub-title">Офис продаж</h2>

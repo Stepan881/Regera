@@ -7654,6 +7654,145 @@ button {
   border: 1px solid #E2704C;
 }
 
+.form__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #373737;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.form__item--bottom {
+  margin: 45px 0 54px;
+}
+
+.form__item input {
+  border: none;
+  border-bottom: 2px solid #7C7C7C;
+  width: 100%;
+  padding: 12px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+}
+
+.form__item input::-webkit-input-placeholder {
+  opacity: 0.4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__item input::-moz-placeholder {
+  opacity: 0.4;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__item input:-ms-input-placeholder {
+  opacity: 0.4;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__item input::-ms-input-placeholder {
+  opacity: 0.4;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__item input::placeholder {
+  opacity: 0.4;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__item input:hover::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.form__item input:hover::-moz-placeholder {
+  opacity: 1;
+}
+
+.form__item input:hover:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.form__item input:hover::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.form__item input:hover::placeholder {
+  opacity: 1;
+}
+
+.form__item input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__item input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.form__item input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__item input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form__item input:focus::placeholder {
+  color: transparent;
+}
+
+.form__item label {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #E2704C;
+}
+
+.form__politics {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.form__politics a {
+  color: #373737;
+}
+
+.form__politics a:hover {
+  color: #373737;
+}
+
+.form button[type="submit"] {
+  margin-top: 24px;
+  color: #ffffff;
+  background-color: #E2704C;
+  border-radius: 999px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 254px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .popup {
   top: 0;
   width: 100%;
@@ -7708,7 +7847,7 @@ button {
   min-height: 543px;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 60px 40px;
+  padding: 60px 100px;
   background: #ffffff;
   position: relative;
   -webkit-box-align: center;
@@ -8666,7 +8805,7 @@ button {
 .contact__right {
   background: #E2704C;
   color: #ffffff;
-  padding: 100px 65px 17px;
+  padding: 100px 65px 100px;
   width: 50%;
   position: relative;
 }
@@ -8682,8 +8821,12 @@ button {
 }
 
 .contact__left {
-  padding: 100px 0 0 0;
+  padding: 100px 129px 100px 0;
   width: 50%;
+}
+
+.contact__form-container {
+  margin-top: 38px;
 }
 
 .contact__head {
@@ -15462,6 +15605,10 @@ button {
     margin-bottom: 60px;
   }
 
+  .contact__left {
+    padding: 100px 100px 100px 0;
+  }
+
   .first-screen__text {
     margin: 41px 0 0 0;
   }
@@ -15771,14 +15918,20 @@ button {
     background: #ffffff;
   }
 
+  .form__politics {
+    margin-bottom: 60px;
+  }
+
   .popup-wrapper {
     max-width: 376px;
   }
 
+  .popup-content {
+    padding: 80px 17px;
+  }
+
   .popup-form .popup-title {
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
+    padding: 0;
   }
 
   .popup-success .popup-title {
@@ -15921,6 +16074,11 @@ button {
     background: #E2704C;
     top: 0;
     left: -99vw;
+  }
+
+  .contact__left {
+    padding: 100px 0;
+    width: 100%;
   }
 
   .contact__head {
@@ -16265,6 +16423,10 @@ button {
 }
 
 @media (max-width: 576px) {
+  .form button[type="submit"] {
+    width: 100%;
+  }
+
   .slider .boolets .boolets-dot {
     width: 8px;
     height: 8px;

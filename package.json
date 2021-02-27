@@ -5,6 +5,10 @@
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"license": "ISC",
+	"scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
 	"devDependencies": {
 		"@babel/core": "^7.12.17",
 		"@babel/preset-env": "^7.12.17",

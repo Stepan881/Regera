@@ -155,11 +155,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	navMenu();
 
-
 	// открыть форму
 	function openForm() {
 		const form = document.querySelector('.popup-form');
 		const success = document.querySelector('.popup-success');
+		const btnSuccess = document.querySelector('.js-submit');
 
 		const btnOpenForm = document.querySelectorAll('.js-open-form');
 		if (form === null || success === null || btnOpenForm === null) {
@@ -212,6 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (evt.target.closest('.popup-close')) {
 				closeSuccess();
 			}
+		});
+
+		btnSuccess.addEventListener('click', function (evt) {
+			evt.preventDefault();
+			openSuccess();
 		});
 
 		// close ecs keydown
