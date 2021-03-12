@@ -257,12 +257,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	navLinks.forEach(link => {
 		let urllink = new URL(link.href);
-		urllink = `/Regera/dist${urllink.pathname}`;
+		urllink = urllink.pathname;
 		if (url.pathname === urllink) {
 			link.classList.add(`active`);
 		}
 
-		console.log(url);
+		console.log(url.pathname);
 		console.log(urllink);
 	})
 	
