@@ -251,4 +251,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	heightHeader();
 
+
+	let url = new URL(window.location.href);
+	const navLinks = document.querySelectorAll(`.nav__link`);
+
+	navLinks.forEach(link => {
+		let urllink = new URL(link.href);
+		urllink = `/Regera${urllink.pathname}`;
+		if (url.pathname === urllink.pathname) {
+			link.classList.add(`active`);
+		}
+
+	})
+	
+
 });
