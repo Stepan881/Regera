@@ -261,9 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (url.pathname === urllink) {
 			link.classList.add(`active`);
 		}
-
-		console.log(url.pathname);
-		console.log(urllink);
 	})
 	
 
