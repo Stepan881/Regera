@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	navLinks.forEach(link => {
 		let urllink = new URL(link.href);
-		urllink = `/Regera${urllink.pathname}`;
+		urllink = `/Regera/dist${urllink.pathname}`;
 		if (url.pathname === urllink.pathname) {
 			link.classList.add(`active`);
 		}
